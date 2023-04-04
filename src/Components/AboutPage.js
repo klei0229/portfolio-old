@@ -110,7 +110,6 @@ const AboutPage = () => {
                 <DoubleArrowIcon />
               </ListItemIcon>
               <ListItemText
-                align="center"
                 sx={{
                   color: "white",
                   fontFamily: darkTheme.typography.text.fontFamily,

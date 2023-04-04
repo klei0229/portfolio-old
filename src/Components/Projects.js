@@ -163,7 +163,6 @@ const Projects = () => {
                     <List
                       sx={{
                         display: "flex",
-                        justifyContent: "center",
                         flexWrap: "wrap",
                       }}
                     >
@@ -192,7 +191,6 @@ const Projects = () => {
                               <DoubleArrowIcon />
                             </ListItemIcon>
                             <ListItemText
-                              align="center"
                               sx={{
                                 color: "white",
                                 fontFamily:
@@ -203,7 +201,7 @@ const Projects = () => {
                                 sx={{
                                   fontFamily:
                                     darkTheme.typography.text.fontFamily,
-                                  fontSize: darkTheme.typography.text.fontSize,
+                                  fontSize: 16,
                                 }}
                               >
                                 {item}
@@ -287,9 +285,6 @@ const Projects = () => {
           );
         })}
       </Grid>
-      <br />
-      <br />
-      <br />
     </>
   );
 };

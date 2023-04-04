@@ -120,7 +120,6 @@ const Education = () => {
                   <DoubleArrowIcon />
                 </ListItemIcon>
                 <ListItemText
-                  align="center"
                   sx={{
                     color: "white",
                   }}
@@ -191,7 +190,6 @@ const Education = () => {
           Redux; along with HTML & CSS, and CS fundamentals.
         </Typography>
       </Box>
-      <br />
     </>
   );
 };
