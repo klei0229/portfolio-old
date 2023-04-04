@@ -34,11 +34,22 @@ const projects = [
     subheading: "Ecommerce Project",
     description:
       "A curated snack bundle subscription e-commerce website that implemented common ecommerce site functionality including user sign up and login, product searching, shopping cart, and order payment with Stripe.",
-    demoLink: "https://menu-builder-capstone.onrender.com/",
-    githubLink: "https://github.com/klei0229/fullstack-capstone-team-6-self",
+    demoLink: "https://snackclub-ecommerce.onrender.com/",
+    githubLink: "https://github.com/klei0229/acme-shopping-2207-FSA-PT_self",
+
     role: "Met regularly to plan out the scope of the project. Helped wireframe website layout and model ecommerce data. Pair programmed the Sequelize models to be used with PostgreSQL and set up the API routes. Created several UI elements using React and Material UI that resulted in completion of the landing page and product detail page.",
-    difficulties:"The difficulty of this project was getting familiar with Material and creating working elements in a rather short period of time. Because of this, I ended up writing many inline style declarations for components. If I was to improve on my code, I would aim to adopt the DRY principle by reduce redundant inline style code.",
-    technologies: ['JavaScript','React','Redux','Express','PostgreSql','MaterialUI','Sequelize','Stripe',]  
+    difficulties:
+      "The difficulty of this project was getting familiar with Material and creating working elements in a rather short period of time. Because of this, I ended up writing many inline style declarations for components. If I was to improve on my code, I would aim to adopt the DRY principle by reduce redundant inline style code.",
+    technologies: [
+      "JavaScript",
+      "React",
+      "Redux",
+      "Express",
+      "PostgreSql",
+      "MaterialUI",
+      "Sequelize",
+      "Stripe",
+    ],
   },
   {
     name: "Quick Menu Builder",
@@ -47,22 +58,39 @@ const projects = [
       "An application that allows local restaurant businesses to generate and customize a digital version of their menu by parsing in menu data via a CSV file.",
     demoLink: "https://menu-builder-stackathon.onrender.com/",
     githubLink: "https://github.com/klei0229/acme_menus_1",
-    role: "My role was to create a MVP of the menu builder in a week’s time. This included creating the database using Sequelize, setting up the API routes, implementing the ability for users to upload CSV sheets, and building out a user interface that lets users toggle several visual components including text font, typography, and color on their menu.",
-    difficulties:"The difficulty of this project was controlling the state of the React project. Due to the time constraint I intended to control the state with just React because I intended to only have a few child elements. I ended up having a hard time scaling the project and noticed I was writing redundant tedious code when including more features. To improve on this project, I can definitely commit to restructure the project and use strictly Redux to control the state."
-    ,technologies: ['Javascript','React','Redux','Express','PostgreSql','Sequelize','MaterialUI']  
-
+    role: "My role was to create an MVP of the menu builder in a week’s time. This included creating the database using Sequelize, setting up the API routes, implementing the ability for users to upload CSV sheets, and building out a user interface that lets users toggle several visual components including text font, typography, and color on their menu.",
+    difficulties:
+      "The difficulty of this project was controlling the state of the React project. Due to the time constraint and scale of the project, I opted to not use Redux and as a result I ended up having a hard time scaling the project. I ended up having to tediously pass props from a parent react component down to the nested child components tree to complete the project. To improve on this project, I can commit to restructuring the project and use Redux to control the state of the application.",
+    technologies: [
+      "Javascript",
+      "React",
+      "Redux",
+      "Express",
+      "PostgreSql",
+      "Sequelize",
+      "MaterialUI",
+    ],
   },
   {
     name: "Restaurant Menu Management App",
     subheading: "Capstone Project",
     description:
       "An expansion of the Quick Menu Builder individual project that elaborates on the function of helping local restaurant businesses manage and design their digital menus.",
-    demoLink: "https://snackclub-ecommerce.onrender.com/",
-    githubLink: "https://github.com/klei0229/acme-shopping-2207-FSA-PT_self",
+    demoLink: "https://menu-builder-capstone.onrender.com/",
+    githubLink: "https://github.com/klei0229/fullstack-capstone-team-6-self",
     role: "Refactored the initial code base from the previous project (Quick Menu Builder) to implement Redux to manage the state of the application. This allowed the application to be maintainable as we included more functionality on the user interface. I also implemented the React Dnd API to create a custom drag and drop user interface that allows users to move items on their menu and ultimately customize the layout of their menu and how menu items appear. ",
-    difficulties:" The challenge for this project was learning how the React Dnd API works and then building the drag and drop system. It was a very time consuming process learning how the API worked and then finding what I could use in the API for the project needs. Ultimately, I had to construct roughly 10 different react components in order for the system to work. To improve the project, I can write code to allow visual components that are found on the menu to be draggable (ex: text, images)"
-    ,technologies: ['JavaScript','React','Redux','Express','PostgreSql','Sequelize','MaterialUI','React DnD',]  
-
+    difficulties:
+      " The challenge for this project was learning how the React Dnd API works and then building the drag and drop system. It was a very - consuming process learning how the API worked and then finding what I could use in the API for the project needs. Ultimately, I had to construct roughly 10 different react components for the system to work. To improve the project, I can write code to allow visual components that are found on the menu to be draggable (ex: text, images).",
+    technologies: [
+      "JavaScript",
+      "React",
+      "Redux",
+      "Express",
+      "PostgreSql",
+      "Sequelize",
+      "MaterialUI",
+      "React DnD",
+    ],
   },
 ];
 
@@ -92,8 +120,8 @@ const Projects = () => {
                     borderRadius: "5px",
                   }}
                 ></SourceIcon>
-                <br/>
-                <br/>
+                <br />
+                <br />
                 <Grid container spacing={6}>
                   {/* left column */}
                   <Grid item lg={5}>
@@ -133,53 +161,58 @@ const Projects = () => {
                       {project.description}
                     </Typography>
                     <List
-        sx={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}
-      >
-                            <Typography
-                      align="left"
-                      variant="h6"
                       sx={{
-                        fontWeight: "bold",
-                        fontFamily: darkTheme.typography.text.fontFamily,
-                        color: darkTheme.typography.text.color,
+                        display: "flex",
+                        justifyContent: "center",
+                        flexWrap: "wrap",
                       }}
                     >
-
-                    </Typography>
-                    <br/>
-        {project.technologies.map((item) => {
-          return (
-            <ListItem
-              sx={{
-                width: "50%",
-              }}
-            >
-              <ListItemIcon
-                sx={{
-                  color: react,
-                }}
-              >
-                <DoubleArrowIcon />
-              </ListItemIcon>
-              <ListItemText
-                align="center"
-                sx={{
-                  color: "white",
-                  fontFamily: darkTheme.typography.text.fontFamily,
-                }}
-              >
-                <Typography
-                  sx={{ fontFamily: darkTheme.typography.text.fontFamily, fontSize: darkTheme.typography.text.fontSize }}
-                >
-                {item}
-                </Typography>
-              </ListItemText>
-            </ListItem>
-          );
-        })}
-      </List>
-
-
+                      <Typography
+                        align="left"
+                        variant="h6"
+                        sx={{
+                          fontWeight: "bold",
+                          fontFamily: darkTheme.typography.text.fontFamily,
+                          color: darkTheme.typography.text.color,
+                        }}
+                      ></Typography>
+                      <br />
+                      {project.technologies.map((item) => {
+                        return (
+                          <ListItem
+                            sx={{
+                              width: "50%",
+                            }}
+                          >
+                            <ListItemIcon
+                              sx={{
+                                color: react,
+                              }}
+                            >
+                              <DoubleArrowIcon />
+                            </ListItemIcon>
+                            <ListItemText
+                              align="center"
+                              sx={{
+                                color: "white",
+                                fontFamily:
+                                  darkTheme.typography.text.fontFamily,
+                              }}
+                            >
+                              <Typography
+                                sx={{
+                                  fontFamily:
+                                    darkTheme.typography.text.fontFamily,
+                                  fontSize: darkTheme.typography.text.fontSize,
+                                }}
+                              >
+                                {item}
+                              </Typography>
+                            </ListItemText>
+                          </ListItem>
+                        );
+                      })}
+                    </List>
                   </Grid>
 
                   {/* right column */}
@@ -206,7 +239,7 @@ const Projects = () => {
                     >
                       {project.role}
                     </Typography>
-                    <br/>
+                    <br />
                     <Typography
                       align="left"
                       variant="h6"

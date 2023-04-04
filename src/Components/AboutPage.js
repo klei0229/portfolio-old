@@ -69,7 +69,7 @@ const AboutPage = () => {
         In June 2022, I enrolled into <Link href="https://www.fullstackacademy.com/" color={react}>Fullstack Academy  
 </Link>  to learn more about web
         development technologies. There, I learned and utilized JavaScript,
-        Node.js, the React/ Redux framework & PostgreSQL to build and deploy
+        Node.js, the React/Redux framework & PostgreSQL to build and deploy
         code for two team & one solo web application projects.
         <br />
         <br />
