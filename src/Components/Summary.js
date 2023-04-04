@@ -113,8 +113,8 @@ const Summary = (props) => {
             }}
           >
             Computer Engineering and Software Bootcamp Graduate with experience
-            building web applications using Javascript, React / Redux and
-            PostgreSql
+            building web applications using JavaScript, NodeJS, ReactJS, ReduxJS and
+            PostgreSQL
           </Typography>
         </div>
       </Box>

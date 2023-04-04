@@ -12,6 +12,7 @@ import {
   ListItem,
   ListItemIcon,
   ListItemText,
+  Link
 } from "@mui/material";
 
 import { styled } from "@mui/material";
@@ -22,10 +23,10 @@ import LayersIcon from "@mui/icons-material/Layers";
 
 const skills = [
   "Javascript",
-  "React",
-  "Redux",
-  "Node.js",
-  "Express",
+  "ReactJS",
+  "ReduxJS",
+  "NodeJS",
+  "ExpressJS",
   "PostgreSQL",
   "Sequelize",
   "MaterialUI",
@@ -57,14 +58,16 @@ const AboutPage = () => {
         junior software engineer.
         <br />
         <br />
-        I first got into programming as a computer engineering student at The
-        City College of New York. As part of my curriculum, I took courses in
+        I first got into programming as a computer engineering student at <Link href="https://www.ccny.cuny.edu/compeng" color={react}>The City College of New York  
+</Link> 
+.&nbsp;As part of my curriculum, I took courses in
         the computer science department. The core classes I took here focused on
         Java, C++ & Python and taught me core computer fundamentals including
         topics like data structures, algorithms, & object-oriented programming.
         <br />
         <br />
-        In June 2022, I enrolled into Fullstack Academy to learn more about web
+        In June 2022, I enrolled into <Link href="https://www.fullstackacademy.com/" color={react}>Fullstack Academy  
+</Link>  to learn more about web
         development technologies. There, I learned and utilized JavaScript,
         Node.js, the React/ Redux framework & PostgreSQL to build and deploy
         code for two team & one solo web application projects.
