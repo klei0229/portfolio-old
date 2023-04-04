@@ -33,9 +33,9 @@ const react = "#489294";
 const second = "#9CA3AF";
 
 const links = [
-  { page: "About", href: "/about" },
-  { page: "Education", href: "/education" },
-  { page: "Projects", href: "/projects" },
+  { page: "About", href: "/portfolio/about" },
+  { page: "Education", href: "/portfolio/education" },
+  { page: "Projects", href: "/portfolio/projects" },
 ];
 
 const Main = (props) => {
@@ -109,10 +109,10 @@ const Main = (props) => {
 
             <br></br>
               <Routes>
-                <Route path='/' element = {<AboutPage/>}></Route>
-                <Route path='/about' element = {<AboutPage/>}></Route>
-                <Route path='/education' element = {<Education/>}></Route>
-                <Route path='/Projects' element = {<Projects/>}></Route>
+                <Route path='/portfolio' element = {<AboutPage/>}></Route>
+                <Route path='/portfolio/about' element = {<AboutPage/>}></Route>
+                <Route path='/portfolio/education' element = {<Education/>}></Route>
+                <Route path='/portfolio/projects' element = {<Projects/>}></Route>
               </Routes>
 
 
