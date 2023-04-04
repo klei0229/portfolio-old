@@ -1,7 +1,7 @@
 {
   "name": "port",
   "version": "0.1.0",
-  "homepage":"http://{klei0229}.github.io/{portfolio-page}",
+  "homepage":"http://klei0229.github.io/portfolio-page",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
