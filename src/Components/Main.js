@@ -1,6 +1,6 @@
 //note: add changes only to ghpages branch
 import React, { useEffect, useState } from "react";
-import darkTheme from "../themes"
+import darkTheme from "../themes";
 
 import {
   useLocation,
@@ -47,17 +47,18 @@ const Main = (props) => {
   console.log(loc);
 
   const sizing = {
-    summary:{
-      width:'20%'
+    summary: {
+      width: "20%",
     },
-    rightSection:'50%'
-  }
-
+    rightSection: "50%",
+  };
 
   return (
     <>
       {/* main box */}
-      <Box sx={{ backgroundColor: darkTheme.background.lightGrey }}>
+      <Box
+        sx={{ backgroundColor: darkTheme.background.lightGrey, height: "auto" }}
+      >
         {/* hero image at top */}
         <Box
           component="img"
@@ -73,12 +74,12 @@ const Main = (props) => {
         <Box
           sx={{
             display: "flex",
-            justifyContent:'center'
-
+            justifyContent: "center",
+            height: "fit-content",
           }}
         >
           {/* Summary */}
-          <Summary sizing = {sizing.summary} classes={classes}></Summary>
+          <Summary sizing={sizing.summary} classes={classes}></Summary>
 
           <Box sx={{ width: sizing.rightSection }}>
             <Box
@@ -90,15 +91,17 @@ const Main = (props) => {
                 borderRadius: "5px",
               }}
             >
-
               {links.map((link) => {
                 return (
                   <div>
                     <Button component={Link} to={link.href} sx={{ ml: "2rem" }}>
-                      <Typography sx={{ 
-                       
-                       color: loc === link.href ? react : 'white',
-                       fontSize: "24px", fontFamily: darkTheme.typography.text.fontFamily }}>
+                      <Typography
+                        sx={{
+                          color: loc === link.href ? react : "white",
+                          fontSize: "24px",
+                          fontFamily: darkTheme.typography.text.fontFamily,
+                        }}
+                      >
                         {link.page}
                       </Typography>
                     </Button>
@@ -107,27 +110,26 @@ const Main = (props) => {
               })}
             </Box>
 
-
             <br></br>
-              <Routes>
-                <Route path='/portfolio' element = {<AboutPage/>}></Route>
-                <Route path='/portfolio/about' element = {<AboutPage/>}></Route>
-                <Route path='/portfolio/education' element = {<Education/>}></Route>
-                <Route path='/portfolio/projects' element = {<Projects/>}></Route>
-              </Routes>
+            <Routes>
+              <Route path="/portfolio" element={<AboutPage />}></Route>
+              <Route path="/portfolio/about" element={<AboutPage />}></Route>
+              <Route
+                path="/portfolio/education"
+                element={<Education />}
+              ></Route>
+              <Route path="/portfolio/projects" element={<Projects />}></Route>
+            </Routes>
 
-
-          {/* <AboutPage></AboutPage> */}
-          <br/>
-          {/* <Skills></Skills> */}
-          <br/>
-          {/* <Education/> */}
-          {/* <Projects/> */}
+            {/* <AboutPage></AboutPage> */}
+            <br />
+            {/* <Skills></Skills> */}
+            <br />
+            {/* <Education/> */}
+            {/* <Projects/> */}
           </Box>
-
         </Box>
       </Box>
-
     </>
   );
 };
