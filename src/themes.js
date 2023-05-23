@@ -4,7 +4,8 @@ const darkTheme = {
         color:'white',
         highlighted:"#489294",      
         fontSize:'18px',
-        fontFamily:'monospace'
+        fontFamily:'monospace',
+        react:'#489294'
     }
     },
     background:{

@@ -43,7 +43,7 @@ const Summary = (props) => {
         className={classes.primaryBox}
         sx={{
           width: sizing.width,
-          height: "50%",
+          height: "fit-content",
           mr: "5%",
           mt: "-10%",
           boxShadow: 3,
@@ -53,7 +53,7 @@ const Summary = (props) => {
         <Box
           component="img"
           src="https://media.licdn.com/dms/image/D4E03AQFxksiXEgTt2A/profile-displayphoto-shrink_400_400/0/1680534639146?e=1686182400&v=beta&t=YGg7u-5K7Wx7pf-Lj4rp_gVfU9K_s9y590qF6ySICPY"
-          sx={{ width: 200, borderRadius: "50%" }}
+          sx={{ width: 125, borderRadius: "50%" }}
         ></Box>
         <Typography
           variant="h4"
@@ -113,8 +113,8 @@ const Summary = (props) => {
             }}
           >
             Computer Engineering and Software Bootcamp Graduate with experience
-            building web applications using Javascript, React / Redux and
-            PostgreSql
+            building web applications using JavaScript, NodeJS, ReactJS, ReduxJS and
+            PostgreSQL
           </Typography>
         </div>
       </Box>
